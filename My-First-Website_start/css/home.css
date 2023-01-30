@@ -1,0 +1,77 @@
+body {
+	font-family: sans-serif;
+}
+
+
+ul.menu {
+	border-style: solid;
+	border-width: 1px;
+	padding: 0.5em;
+	border-radius: 0.5em;
+	background-color: black;
+}
+
+ul.menu li {
+	/* remove list item red border
+	border-style: solid;
+	border-width: 1px;
+	border-color: red;*/
+	list-style-type: none;
+	display: inline;/* This displays your list inline */
+	margin-right: 0.5em;
+	margin-left: 0.5em;
+}
+
+ul.menu li a {
+	color: white;
+	text-decoration: none;
+}
+       
+ul.menu li.selected {
+	color: yellow;
+}
+
+ul.menu li a:hover {
+	color: #99DDFF;
+	text-decoration: underline;
+}
+/*What you’ve done is added a
+new rule which applies only to li elements with a class attribute of selected. Notice the
+syntax in the CSS file — instead of specifying li in the rule, you specify li.selected*/
+
+article {
+	float: left;
+	border-style: solid;
+	border-width: 1px;
+	margin-right: 1em;
+	margin-bottom: 1em;
+	padding: 1em;
+}
+aside {
+	float: left;
+	border-style: solid;
+	border-width: 1px;
+	padding: 1em;
+	border-radius: 1em;
+	background-color: #FFFFC0;
+	box-shadow: 10px 10px 5px gray;
+	color: #2F5670;
+	list-style-type: square;
+	font-size: 1em;
+}
+
+table, th, td
+	{
+	border: 1px solid white;
+	border-collapse: collapse;
+	}
+	tr
+	{
+	background-color: silver;
+	}
+	th, td
+	{
+	vertical-align: top;
+	padding: 0.5em;
+	text-align: left;
+}
